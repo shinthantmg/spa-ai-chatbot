@@ -1,0 +1,19 @@
+{
+  "name": "spa-ai-chatbot",
+  "version": "1.0.0",
+  "description": "AI booking assistant for Lotus Spa Bangkok: answers only from real spa data and books appointments in the chat",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node --test \"tests/unit/*.test.js\"",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
